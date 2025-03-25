@@ -35,7 +35,7 @@ className="logo" alt="Rick Astley Logo" />
                 <button className='btn'
                     onClick={() =>
                         setCount((count) => count + 1)}>
-                    count is {count}
+                        {count}
                 </button>
             </div>
         </>
