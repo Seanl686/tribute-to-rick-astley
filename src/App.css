@@ -1,15 +1,15 @@
 body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'garamond', sans-serif;
+  margin: 0;
   overflow-x: hidden;
+  padding: 0;
+  width: 100%;
 }
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
+  max-width: 1280px;
   padding: 2rem;
   text-align: center;
   width: 100%;
@@ -17,10 +17,10 @@ body {
 
 .logo {
   max-height: 6em;
-  width: auto;
   padding: 1.5em;
-  will-change: filter;
   transition: filter 300ms;
+  width: auto;
+  will-change: filter;
 }
 
 .logo:hover {
@@ -55,18 +55,18 @@ body {
 }
 
 .btn {
-  border-radius: 6px;
-  padding: 0.7em 1.5em;
-  font-size: 1.7em;
-  font-weight: 500;
-  font-family: inherit;
   background-color: rgb(38, 8, 75);
+  border: none;
+  border-radius: 2px;
   color: white;
   cursor: pointer;
-  transition: background-color 0.25s, border 0.25s;
-  border: none;
-  width: 13rem;
+  font-family: inherit;
+  font-size: 1.7em;
+  font-weight: 500;
   max-width: 100%;
+  padding: 0.7em 1.5em;
+  transition: background-color 0.25s, border 0.25s;
+  width: 13rem;
 }
 
 .btn:hover {
@@ -75,32 +75,78 @@ body {
 }
 
 .video-container {
+  height: 0;
+  margin: 1rem 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  margin: 1rem 0;
 }
 
 .video-container iframe {
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
 }
 
 h1 {
-  font-weight: lighter;
   font-size: 2.5em;
+  font-weight: lighter;
   margin: 0.5em 0;
 }
 
 h2 {
-  font-weight: lighter;
   font-size: 1.5em;
+  font-weight: lighter;
   margin: 0.5em 0;
+}
+
+.video-thumbnail {
+  background-color: #000;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.video-thumbnail img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.play-button-overlay {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.play-button-overlay .btn {
+  align-items: center;
+  background-color: rgba(38, 8, 75, 0.9);
+  border: 2px solid white;
+  border-radius: 3px;
+  display: flex;
+  font-size: 2rem;
+  height: 3rem;
+  justify-content: center;
+  opacity: 1;
+  padding: 0.5em 1.5em;
+  width: 8rem;
+  z-index: 20;
 }
 
 /* Responsive styles */
@@ -110,8 +156,8 @@ h2 {
   }
   
   .btn {
-    width: 100%;
     max-width: 13rem;
+    width: 100%;
   }
 }
 
