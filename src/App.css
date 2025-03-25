@@ -140,13 +140,18 @@ h2 {
   border: 2px solid white;
   border-radius: 3px;
   display: flex;
-  font-size: 2rem;
+  font-size: 2.95rem;
   height: 3rem;
   justify-content: center;
   opacity: 1;
   padding: 0.5em 1.5em;
   width: 8rem;
   z-index: 20;
+}
+
+.btn:hover {
+  background-color: rgb(95, 88, 135);
+  border: solid 1px white;
 }
 
 /* Responsive styles */
