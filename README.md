@@ -5,6 +5,7 @@
 Follow these steps to run the project locally:
 
 1. **Install dependencies**
+
    ```bash
    npm install
    # or
@@ -12,11 +13,13 @@ Follow these steps to run the project locally:
    ```
 
 2. **Start the development server**
+
    ```bash
    npm run dev
    # or
    yarn dev
    ```
+
    This will start the dev server at http://localhost:5173 (default port)
 
    This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

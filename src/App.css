@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  font-family: 'garamond', sans-serif;
+  font-family: "garamond", sans-serif;
   margin: 0;
   overflow-x: hidden;
   padding: 0;
@@ -65,7 +65,9 @@ body {
   font-weight: 500;
   max-width: 100%;
   padding: 0.7em 1.5em;
-  transition: background-color 0.25s, border 0.25s;
+  transition:
+    background-color 0.25s,
+    border 0.25s;
   width: 13rem;
 }
 
@@ -159,7 +161,7 @@ h2 {
   #root {
     padding: 1rem;
   }
-  
+
   .btn {
     max-width: 13rem;
     width: 100%;
@@ -170,11 +172,11 @@ h2 {
   h1 {
     font-size: 2em;
   }
-  
+
   h2 {
     font-size: 1.2em;
   }
-  
+
   .btn {
     font-size: 1.4em;
     padding: 0.6em 1.2em;
